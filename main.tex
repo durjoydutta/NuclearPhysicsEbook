@@ -1,0 +1,75 @@
+%------------------------------------------Packages used-------------------------------------------------
+\documentclass[ebook, 12pt, twoside, openany]{memoir}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage[top=4.5em,left=3.5em, right=3.5em, bottom=4em,footskip=1.4cm]{geometry}
+\usepackage{titling}
+\usepackage{adjustbox}
+\usepackage{tabularx}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[listings,theorems]{tcolorbox}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+%----------------------------------------------------------------------------------------------------------
+
+\graphicspath{{images/}}
+\hypersetup{
+    colorlinks = true,
+    urlcolor = blue!75!black,
+    linkcolor = blue!70!black,
+    }
+\setlength{\parindent}{1em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.75} 
+\addto\captionsenglish{\renewcommand*\contentsname{Table of Contents}}
+%-------------------------------------------------------
+\title{{\textbf{Introduction to Nuclear Physics}}}
+\vspace{2cm}  
+\author{\textbf{Durjoy Dutta Chaudhury}}
+%\predate{\centering}
+\date{}
+%\postdate{\vfill\hfill\emph{{\copyright Pradip Datta, Ananda Mohan College, Kolkata-700009}}\hfill}
+%-------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------
+
+\maketitle
+\pagebreak
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+%----------------------------------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\fancyhead[LE]{\tiny{\leftmark}}
+\fancyhead[LO]{\tiny{\rightmark}}
+
+\renewcommand{\headrulewidth}{1pt}
+
+\fancypagestyle{the_end}{\fancyhf{}\renewcommand{\headrulewidth}{1pt}\fancyhead[R]{\thepage}
+\fancyhead[LE]{\tiny{\leftmark}}
+\fancyhead[LO]{\tiny{\rightmark}}\fancyfoot[R]{\textit{\tiny{}}}}
+
+
+\thispagestyle{plain}
+%-------------------------------------------------------------Chapter Inputs--------------------------------
+
+    \input{chapters/00_Units_and_Conversions}
+    \input{chapters/01_Nuclear_Force}    
+    \input{chapters/02_Fundamental_Interactions} 
+    \input{chapters/03_Liquid_Drop_Model} 
+    \input{chapters/04_Application of Bethe}
+    
+%----------------------------------------------------------------------------------------------------------
+\renewcommand{\footrulewidth}{0.25pt}
+\thispagestyle{the_end} 
+
+\end{document}

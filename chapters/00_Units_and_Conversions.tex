@@ -1,0 +1,79 @@
+\chapter{Units \& Conversion}
+
+\vspace{2cm}\begin{tcolorbox}
+    [colframe=black!90!white,colback=yellow!29.05!white,arc=0.75em,fonttitle=\bfseries,title= \textit{Key Objective:}, width = \textwidth]   
+        \begin{itemize}
+        \item Atomic Mass Unit
+        \item Unit Conversion
+        \end{itemize}
+    \end{tcolorbox}
+   
+   
+\pagebreak\section{{Atomic Mass Unit}}
+    Let us to calculate the coulomb barrier between two colliding nuclei! This can be a harrowing task (at least to me !) if we stick to our well known $SI$ unit system. It is to be noted that the $SI$ unit is convenient to express quantities used in daily life. However, it may not be suitable to express nucleons mass ($m_p=1.6726219×10^{-27} \ kg$), dimension ($10^{-15} \ m$) and other similar quantities related to atomic nuclei. Therefore, physicists introduced the concept of atomic mass unit ($a.m.u.$). since 1961, a unit of atomic mass is considered to be $\frac{1}{12} \ th$ of the mass of $^{12}C$ which is $12u$ ($u$ is the unit of mass). Note that there are a number of methods to determine the atomic mass and I advise you to consult any standard text book to learn those methods.\\
+    \par We know that $1 \ gm \ mole$ of $^{12}C$ consists of Avogadro Number $(N_0)$ of atoms, i.e. $6.023×10^{23}$. Thus mass of one $^{12}C$ atom is ${12}/{N_0} \ gm$ or ${12×10^{-3}}/{N_0} \ kg$. Therefore, atomic mass $(u)$ in $^{12}C$ scale is 
+    \begin{equation}
+        \begin{split}
+    u &= \frac{1}{12} × \frac{12×10^{-3}}{6.023×10^{23}} \ kg. \\[12pt]
+    &= 1.660566×10^{-27} \ kg. \\[12pt]
+        \end{split}
+    \end{equation}
+    \par Since we already know the $Mass$ \& $Energy$ equivalence principle, we express both $Mass$ in energy units by multiplying it with $c^{2}$. Hence
+    \begin{equation}
+         \begin{split}
+    u &= 1.660566×10^{-27} × c^{2} \\[5pt]
+    &= 1.660566×10^{-27} × 8.98755×10^{16} \ J \\[5pt]
+    &= 14.924427×10^{-11} \ J \\[5pt]
+    &= \frac{14.924427×10^{-11}}{1.60219×10^{-13}} \ MeV \\[5pt]
+    &= 931.502 \ MeV 
+         \end{split}
+    \end{equation}
+    \section{{Unit Conversion: Natural Units}}
+    But do you notice the amount of jugglery between the units ! It is quite inconvenient if we need to go through these steps each time while solving numerical problems ! Let us go back to the problem we have already introduced: \textbf{\textit{The Coulomb barrier between two colliding nuclei.}}
+    \par If we have to solve this problem with our SI unit approach, we need to solve the following equation (refer to the \href{https://en.wikipedia.org/wiki/Coulomb_barrier}{Wikipedia} page) as\\
+    The electrostatic potential energy $(V_{Coulomb})$ is
+    \begin{equation}
+        \begin{split}
+    V_{Coulomb} = k \frac{q_1q_2}{r} = \frac{1}{4 \pi \epsilon_0} \frac{q_1q_2}{r}~~~~~~~~~~~~~\\
+            \textrm where,\\
+            k~\textrm {is the Coulomb's constant}~= 8.9876×10^{9}Nm^{2}C^{-2};\\
+            \epsilon_0~\textrm {is the permittivity of free space;}\\
+            q_1,q_2~\textrm{are the chrages of the interacting nuclei;}\\
+            r~\textrm{ is the interaction radius.}
+        \end{split}
+    \end{equation}
+    
+    This is quite frightening! Isn't it? Let us adopt a different approach. You need to remember the value only two fundamental quantities namely, the \textbf{Fermi Length} $(\hbar c)$ and the fine structure constant $\alpha$. \\
+    \begin{equation}
+         \begin{split}
+          1. \ \hbar c \approx 197MeV.fm \\[12pt]
+          2. \ \alpha = \frac{e^{2}}{4 \pi \epsilon_0 \hbar c } = \frac{1}{137}\\[12pt]
+          \end{split}
+    \end{equation} 
+          
+    Now let us rewrite $V_{Coulomb}$ with these inputs ! \\
+    \begin{equation}
+        \begin{split}
+    V_{Coulomb} = \frac{\hbar c}{4 \pi \epsilon_0 \hbar c} \frac{q_1q_2}{r}
+        \end{split}
+    \end{equation}
+
+    We replace $q$ with $q.e$. This way $q$ becomes just a number. Example: If you have $^{16}O$, $q_1$ is $16e$, where $e$ is the unit of charge. Therefore the above equation can be written as \\
+    \begin{equation}
+        \begin{split}
+    &V_{Coulomb} = \frac{e^{2}}{4 \pi \epsilon_0 \hbar c} \frac{q_1q_2 \ \hbar c}{r} = \frac{197}{137} \ MeV. fm \ \frac{q_1q_2}{r} \\[12pt]
+    &V_{Coulomb} = 1.44 × \frac{q_1q_2}{r} \frac{MeV.fm}{fm} = 1.44 × \frac{q_1q_2}{r} \ MeV. \\[12pt]
+        \end{split}
+    \end{equation}
+    \par If we remember this little trick, we will be through many places in our course of $\emph{Nuclear Physics}$ at ease. \\[25pt]
+%    \textcolor{red}{\textbf{H.W. \ Calculate the Coulomb barrier between $^{208}Pb$ \& $^{18}O$.}} \\[30pt]
+    
+\begin{comment}
+    \begin{tcolorbox}
+    [colframe=black!50!black,colback=white!100!white,arc=0.1em,fonttitle=\bfseries,title= \underline{Learning Outcomes:},width= \textwidth]
+        \begin{itemize}
+        \item $\textcolor{blue}{1 \ a.m.u. = 931.502 \ MeV}$
+        \item \textcolor{blue}{Using the concept of fine structure constant and fermi length to handle numerical problems in \emph{Nuclear Physics} in a convient way. Example: Calculation of Coulomb Barrier between the colliding nuclei.}
+        \end{itemize}
+    \end{tcolorbox}
+\end{comment}    
